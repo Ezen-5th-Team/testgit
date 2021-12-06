@@ -1,0 +1,24 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+    encoding:
+      charset: utf-8
+      enabled: true
+
+
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@127.0.0.1:1521:XE
+    username: beomchu
+    password: 1234
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    
+  jpa:
+    open-in-view: true
+    hibernate:
+      ddl-auto: create
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
