@@ -18,7 +18,7 @@ public class UserController {
 	public String createUserTest(User user) {
 		userService.createUser(user);
 		
-		return "¼º°ø";
+		return "ì„±ê³µ";
 		
 		
 	}
